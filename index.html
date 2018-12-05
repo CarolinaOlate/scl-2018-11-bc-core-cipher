@@ -10,20 +10,21 @@
 </head>
 
     <body>
-      <header>
-               cifrado cesar
-
-      </header>
-        <h1>Bienvenidos a Cifrado cesar</h1> <br></br>
-        <p>Instrucciones</p>
-        <textarea placeholder="Insertar mensaje" id="mensaje"> </textarea><br></br>
-        <textarea disabled placeholder="Resultado cifrado/descifrado" id="resultado"></textarea> <br></br>
+        <header class="header">Cifrado cesar</header>
+     <article class="main">
+      <p>Instrucciones: El cifrado funciona desplazando las letras según el numero clave<br><br> por ejemplo, la letra A se cambiaría por la D si nuestra clave fuera 3, y la B pasaría a ser E y así sucesivamente. </p>
+    </article><br><br><br><br>
+      <div>
+        <textarea placeholder="Insertar mensaje" id="mensaje" rows="5" cols="50"> </textarea><br><br>
+        <input type="number" placeholder="Offset" id="numero"> <br><br>
+        <textarea disabled placeholder="Resultado cifrado/descifrado" id="resultado" rows="5" cols="50"></textarea> <br><br>
+    </div>
         <div>
-          <input type="number" placeholder="Offset" id="numero">
-        <button onclick="cifrar()">Cifrar</button> 
-        <button onclick="descifrar()">Descifrar</button>
+        <button id="btnIngresar">Cifrar</button> 
+        <button id="btnIngresar2">Descifrar</button>
         </div>
-
+      
+      
 <script src="cipher.js"></script>
 <script src="index.js"></script>
 </body>

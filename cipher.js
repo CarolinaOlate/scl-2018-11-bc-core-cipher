@@ -6,6 +6,7 @@ encode: (displace,capLetter) => {
     let asciiNumber = capLetter.charCodeAt(i);
     if (asciiNumber >= 65 && asciiNumber <= 90 ) {
       let convertedLetter=(asciiNumber-65+parseInt(displace))%26+65;
+
       result += String.fromCharCode(convertedLetter);
     }
     else {
@@ -30,6 +31,6 @@ decode: (displace,capLetter) => {
   return result;
 
 }
-}
+};
 
 
