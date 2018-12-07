@@ -1,11 +1,11 @@
 window.cipher = {
-encode: (displace,capLetter) => {
+encode: (displacement,capitalLetter) => {
   /* Acá va tu código */
   let result = '';
-  for (let i=0; i<capLetter.length; i++){
-    let asciiNumber = capLetter.charCodeAt(i);
+  for (let i=0; i<capitalLetter.length; i++){
+    let asciiNumber = capitalLetter.charCodeAt(i);
     if (asciiNumber >= 65 && asciiNumber <= 90 ) {
-      let convertedLetter=(asciiNumber-65+parseInt(displace))%26+65;
+      let convertedLetter=(asciiNumber-65+parseInt(displacement))%26+65;
 
       result += String.fromCharCode(convertedLetter);
     }
@@ -16,12 +16,12 @@ encode: (displace,capLetter) => {
   return result;
 },
 
-decode: (displace,capLetter) => {
+decode: (displacement,capitalLetter) => {
   let result = '';
-  for (let i=0; i<capLetter.length; i++){
-    let asciiNumber = capLetter.charCodeAt(i);
+  for (let i=0; i<capitalLetter.length; i++){
+    let asciiNumber = capitalLetter.charCodeAt(i);
     if (asciiNumber >= 65 && asciiNumber <= 90 ) {
-      let convertedLetter=(asciiNumber-65-parseInt(displace))%26+65;
+      let convertedLetter=(asciiNumber-65-parseInt(displacement))%26+65;
       if (convertedLetter <65){
         convertedLetter +=26;
       }
