@@ -4,18 +4,28 @@
 }
 
 body{
-    background: #555151;
-    font-weight: bold;
-    text-align: center;
+    background-image: url(http://www.psdgraphics.com/file/rainbow-colors.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
     
+}
+
+.imagen {
+    text-align: center;
+}
+
+.caja {
+    text-align: center;
 }
 
 Header {
     font-size: 60px;
     background-color: #ecf4f3;
     width: 100%;
-    padding: 30px;
-    height: 80px;
+    padding: 20px;
+    height: 50px;
     border: 2px solid black;
     text-align: center;
     
@@ -26,17 +36,20 @@ Header {
     text-align: center;
     background: #76dbd1;
     padding: 10px;
+
+    
+    
 }
 
 input{
     text-align: center;
     width: 20%;
     height: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
     box-sizing: border-box;
     border: 2px solid black;
     background-color: #57a99a;
+    -webkit-box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
+    -moz-box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
+    box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
+    
 }

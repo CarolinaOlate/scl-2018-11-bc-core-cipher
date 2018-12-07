@@ -21,15 +21,18 @@ decode: (displace,capLetter) => {
   for (let i=0; i<capLetter.length; i++){
     let asciiNumber = capLetter.charCodeAt(i);
     if (asciiNumber >= 65 && asciiNumber <= 90 ) {
-      let convertedLetter=(asciiNumber-65-parseInt (displace))%26+65;
+      let convertedLetter=(asciiNumber-65-parseInt(displace))%26+65;
+      if (convertedLetter <65){
+        convertedLetter +=26;
+      }
       result += String.fromCharCode(convertedLetter);
-    }
-    else {
+    }else {
       result += String.fromCharCode(asciiNumber);
     }
   }
   return result;
 
+  
 }
 };
 
