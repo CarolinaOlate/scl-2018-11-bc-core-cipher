@@ -10,9 +10,6 @@
     document.getElementById("resultado").innerHTML = result;
     })
 
-
-
-
 //function descifrar(){
     document.getElementById("btnIngresar2").addEventListener("click",() =>{
         //evento.preventDefault();

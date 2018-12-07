@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cifrado cesar</title>
+  <title>Secreto</title>
   <link rel="stylesheet" href="style.css">
 
 </head>
 
     <body>
-        <header class="header">Cifrado cesar</header>
-     <article class="main">
-      <p>Instrucciones: El cifrado funciona desplazando las letras según el numero clave<br><br> por ejemplo, la letra A se cambiaría por la D si nuestra clave fuera 3, y la B pasaría a ser E y así sucesivamente. </p>
-    </article><br><br><br><br>
-      <div>
-        <textarea placeholder="Insertar mensaje" id="mensaje" rows="5" cols="50"> </textarea><br><br>
+        <header class="header">Secretos</header>
+       <article class="main">
+      <p>Instrucciones: envía mensajes secretos a tus amigas.<br> El cifrado funciona agregando el numero de desplazamiento en el Offset. <br>POR EJEMPLO: la letra A se cambiaría por la D si nuestro desplazamiento fuera 3, y la B pasaría a ser E y así sucesivamente.<br> Se debe ingresar el mensaje solo con mayúscula y así podrás enviar secretos a tus amigas sin que nadie se entere. </p>
+    </article><br><br>
+    <div class="imagen">
+    <img src="secretos-logos.jpg" width="200" height="200" alt="secretos">
+    </div><br>
+      <div class="caja">
+        <textarea placeholder="Insertar mensaje" id="mensaje" rows="3" cols="50"></textarea><br><br>
         <input type="number" placeholder="Offset" id="numero"> <br><br>
-        <textarea disabled placeholder="Resultado cifrado/descifrado" id="resultado" rows="5" cols="50"></textarea> <br><br>
-    </div>
-        <div>
+        <textarea disabled placeholder="Resultado cifrado/descifrado" id="resultado" rows="3" cols="50"></textarea> <br><br>
         <button id="btnIngresar">Cifrar</button> 
         <button id="btnIngresar2">Descifrar</button>
         </div>
