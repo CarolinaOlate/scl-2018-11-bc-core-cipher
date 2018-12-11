@@ -1,5 +1,7 @@
 /* Acá va tu código */
 //function cifrar(){
+    const buttonReset = document.getElementById('reset');
+
     document.getElementById("btnIngresar").addEventListener("click",() =>{
         //evento.preventDefault();
     let capitalLetter= document.getElementById("mensaje").value;
@@ -20,4 +22,11 @@
 
     document.getElementById("resultado").innerHTML = result;
     })
+
+    buttonReset.addEventListener("click", () => {
+        document.getElementById("mensaje").value = "";
+        document.getElementById("numero").value="";
+        document.getElementById("resultado").innerHTML = "";
+        });
+      
 

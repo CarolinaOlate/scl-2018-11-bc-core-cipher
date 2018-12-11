@@ -12,6 +12,27 @@ body{
     
 }
 
+button {
+    background-color: #76dbd1; 
+    border: 2px solid black;
+    color: black;
+    padding: 10px 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8A2A1D;
+  color: white;
+
+}
+
+
 .imagen {
     text-align: center;
 }
@@ -43,11 +64,11 @@ Header {
 
 input{
     text-align: center;
-    width: 20%;
-    height: 50px;
+    width: 10%;
+    height: 25px;
     box-sizing: border-box;
     border: 2px solid black;
-    background-color: #57a99a;
+    background-color: #76dbd1;
     -webkit-box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
     -moz-box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
     box-shadow: -15px 13px 23px 1px rgba(0,4,5,1);
